@@ -1,0 +1,21 @@
+.logo {
+  width: 65px;
+  height: 65px;
+  text-align: center;
+  background-color: $redBg;
+  position: absolute;
+  top: 175px;
+  left: -32px;
+}
+
+.logo__link {
+  width: 100%;
+  font: italic 800 24px/65px $ffM;
+  color: #fff;
+  display: inline-block;
+
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "AvenirNextRoundedReg";
+  src: url("../fonts/Avenir Next Rounded/Avenir Next Rounded w01 Reg/Avenir Next Rounded w01 Reg.eot");
+  src: url("../fonts/Avenir Next Rounded/Avenir Next Rounded w01 Reg/Avenir Next Rounded w01 Reg.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir Next Rounded/Avenir Next Rounded w01 Reg/Avenir Next Rounded w01 Reg.woff") format("woff"), url("../fonts/Avenir Next Rounded/Avenir Next Rounded w01 Reg/Avenir Next Rounded w01 Reg.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirNextRoundedMed";
+  src: url("../fonts/Avenir Next Rounded/Avenir Next Rounded w01 Med/Avenir Next Rounded w01 Med.eot");
+  src: url("../fonts/Avenir Next Rounded/Avenir Next Rounded w01 Med/Avenir Next Rounded w01 Med.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir Next Rounded/Avenir Next Rounded w01 Med/Avenir Next Rounded w01 Med.woff") format("woff"), url("../fonts/Avenir Next Rounded/Avenir Next Rounded w01 Med/Avenir Next Rounded w01 Med.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirNextRoundedDemi";
+  src: url("../fonts/Avenir Next Rounded/Avenir Next Rounded w01 Demi/Avenir Next Rounded w01 Demi.eot");
+  src: url("../fonts/Avenir Next Rounded/Avenir Next Rounded w01 Demi/Avenir Next Rounded w01 Demi.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir Next Rounded/Avenir Next Rounded w01 Demi/Avenir Next Rounded w01 Demi.woff") format("woff"), url("../fonts/Avenir Next Rounded/Avenir Next Rounded w01 Demi/Avenir Next Rounded w01 Demi.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ProximaNovaReg";
+  src: url("../fonts/Proxima Nova/Proxima Nova Reg/Proxima Nova.eot");
+  src: url("../fonts/Proxima Nova/Proxima Nova Reg/Proxima Nova.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima Nova/Proxima Nova Reg/Proxima Nova.woff") format("woff"), url("../fonts/Proxima Nova/Proxima Nova Reg/Proxima Nova.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ProximaNovaSemibold";
+  src: url("../fonts/Proxima Nova/Proxima Nova Semibold/Proxima Nova Semibold.eot");
+  src: url("../fonts/Proxima Nova/Proxima Nova Semibold/Proxima Nova Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima Nova/Proxima Nova Semibold/Proxima Nova Semibold.woff") format("woff"), url("../fonts/Proxima Nova/Proxima Nova Semibold/Proxima Nova Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+.heading {
+  font: 300 45px/50px "Roboto Condensed", Arial, sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.heading-big {
+  font: 800 300px/280px "Merriweather", serif;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+}
+
+.heading-big::first-letter {
+  margin-right: 200px;
+}
+
+.heading-big:after {
+  content: "";
+  display: block;
+  width: 215px;
+  height: 11px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 15px;
+  left: 120px;
+}
+
+.heading-big:before {
+  content: "";
+  display: block;
+  width: 44px;
+  height: 22px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -5px;
+  left: 120px;
+}
+
+.heading-sub {
+  font: 300 15px/24px "Roboto", Arial, sans-serif;
+  color: #fff;
+}
+
+.title {
+  font: 800 35px/42px "Merriweather", serif;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.stick-wrap {
+  color: #fff;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  letter-spacing: 7px;
+  transform: rotate(-90deg);
+  z-index: 10;
+}
+
+.stick-lg {
+  font: 400 12px/10px "Roboto Condensed", Arial, sans-serif;
+}
+
+.stick-sm {
+  font: 400 10px/10px "Roboto Condensed", Arial, sans-serif;
+  word-spacing: 0;
+  letter-spacing: 4px;
+}
+
+.left {
+  position: absolute;
+  left: -15px;
+}
+
+.right {
+  position: absolute;
+  right: 40px;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
+}

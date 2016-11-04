@@ -1,0 +1,164 @@
+.header {
+  padding: 45px 0 0 45px;
+  position: relative;
+
+  &:after, &:before {
+    content: "";
+    display: block;
+    background-color: fade-out(#fff, 0.8);
+    position: absolute;
+  }
+
+  &:after {
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 77px;
+  }
+
+  &:before {
+    width: 100%;
+    height: 1px;
+    top: 285px;
+    left: 0;
+    z-index: 9;
+  }
+
+  &-wrap {
+    background-color: $redBg;
+    position: relative;
+  }
+
+  &__content {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &-pic {
+    min-width: 100%;
+    z-index: 1;
+  }
+
+  &__top {
+    width: 100%;
+    padding: 60px 60px 0 0;
+    @include clr;
+  }
+}
+
+.stick-wrap_header-mods {
+  color: #b6b6b6;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  transform: rotate(0deg);
+  position: absolute;
+  top: 0;
+  left: 100px;
+}
+
+.stick-lg_header-mods {
+  line-height: 45px;
+}
+
+.stick-wrap_header-mods_l {
+  top: 610px;
+}
+
+.stick-wrap_header-mods_r-b {
+  top: 360px;
+  right: 25px;
+}
+
+.stick-wrap_header-mods_r-t {
+  top: 215px;
+}
+
+// header__top ********************************* //
+
+.aside__search,
+.modal-wind,
+.user {
+  margin-right: 5px;
+  float: right;
+}
+
+.user {
+  width: 48px;
+  height: 48px;
+
+  &__link {
+    display: block;
+    overflow: hidden;
+    @include br(50%);
+  }
+}
+
+.trigger {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 13px;
+  cursor: pointer;
+  position: relative;
+
+  &-search {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.aside__search {
+  width: 250px;
+  height: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.search {
+  width: 250px;
+  position: absolute;
+  top: 0;
+  left: 250px;
+  @include transition;
+
+  &__input {
+    width: 100%;
+    padding: 12px 45px 12px 12px;
+    border: none;
+  }
+
+  &__submit {
+    width: 40px;
+    height: 40px;
+    background: $redBg url(../img/search.png) no-repeat center center;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+//header__heading **************************************** //
+
+.header__heading {
+  padding: 95px 75px 0 195px;
+  @include clr;
+}
+
+.heading-wrap {
+  width: 540px;
+  float: right;
+}
+
+.date-wrap {
+  margin-bottom: 10px;
+}
+
+.font-style {
+  font: 500 14px/14px $ffR;
+  color: #fff;
+  text-transform: uppercase;
+}

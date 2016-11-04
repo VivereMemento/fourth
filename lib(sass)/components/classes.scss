@@ -1,0 +1,87 @@
+.heading {
+  font: 300 45px/50px $ffRC;
+  color: #fff;
+  text-transform: uppercase;
+
+  &-big {
+    font: 800 300px/280px $ffM;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+
+    &::first-letter {
+      margin-right: 200px
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      width: 215px;
+      height: 11px;
+      background-color: #fff;
+      position: absolute;
+      bottom: 15px;
+      left: 120px;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      width: 44px;
+      height: 22px;
+      background-color: #fff;
+      position: absolute;
+      bottom: -5px;
+      left: 120px;
+    }
+  }
+
+  &-sub {
+    font: 300 15px/24px $ffR;
+    color: #fff;
+  }
+}
+
+.title {
+  font: 800 35px/42px $ffM;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.stick-wrap {
+  color: #fff;
+  text-transform: uppercase;
+  word-spacing: 5px;
+  letter-spacing: 7px;
+  transform: rotate(-90deg);
+  z-index: 10;
+}
+
+.stick-lg {
+  font: 400 12px/10px $ffRC;
+  
+}
+
+.stick-sm {
+  font: 400 10px/10px $ffRC;
+  word-spacing: 0;
+  letter-spacing: 4px;
+}
+
+.left {
+  position: absolute;
+  left: -15px;
+}
+
+.right {
+  position: absolute;
+  right: 40px;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
+}
