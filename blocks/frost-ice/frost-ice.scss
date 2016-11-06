@@ -1,0 +1,33 @@
+.frost-ice {
+  padding-top: 20px;
+  background-color: $redBg;
+  position: relative;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: fade-out(#fff, 0.8);
+    position: absolute;
+    top: 0;
+    left: 32px;
+  }
+}
+
+.title-wrap {
+  margin-bottom: 40px;
+}
+
+.item-content__text {
+  font: 400 15px/15px $ffR;
+  color: #fff;
+}
+
+.bordered {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 130px 0 70px 1305px;
+  border-color: transparent transparent #11161d transparent;
+}
