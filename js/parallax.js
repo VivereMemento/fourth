@@ -3,7 +3,7 @@ $(document).ready(function () {
     var st = $(window).scrollTop();
 
     $(".parallax-box").css({
-      "transform" : "translate(0%, -" + st /30 + "%"
+      "transform" : "translate(0%, " + st /30 + "%"
     });
 
     $(".parallax-img").css({

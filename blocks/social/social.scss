@@ -3,12 +3,13 @@
 }
 
 .social__list {
-  float: right;
+  margin-right: 20px;
+  float: left;
 }
 
 .social__item {
-  width: 32px;
-  height: 32px;
+  width: 45px;
+  height: 45px;
   margin-right: 10px;
   display: inline-block;
 
@@ -18,11 +19,11 @@
 }
 
 .social__link {
-  width: 32px;
-  height: 32px;
-  padding: 7px 6px 6px;
+  width: 45px;
+  height: 45px;
+  padding: 11px 14px;
   display: block;
-  background: #2c3b42;
+  background: $redBg;
   @include br(50%);
   position: relative;
 
@@ -35,6 +36,7 @@
     position: absolute;
     left: 0;
     top: 0;
+    @include br(50%);
   }
 
   &:hover:after {
@@ -57,6 +59,6 @@
 }
 
 .fa {
-  font-size: 16px;
+  font-size: 22px;
   color: #fff;
 }

@@ -1,0 +1,140 @@
+.blog {
+  position: relative;
+
+  &-bg {
+    position: relative;
+  }
+
+  &-wrap {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__content {
+    padding: 150px 40px 0 0;
+    @include clr;
+
+    &-title {
+      width: 40%;
+      padding-right: 100px;
+      float: left;
+    }
+
+    &-text {
+     width: 30%;
+     padding-right: 5px;
+     float: left;
+    }
+  }
+
+  .pre-title {
+    margin-bottom: 15px;
+    font: 700 14px/14px $ffR;
+    text-transform: uppercase;
+    color: #4d595e;
+    display: block;
+
+    &_red {
+      color: #d1232a;
+    }
+  }
+
+  .post-title {
+    margin-top: 15px;
+    font: italic 400 20px/30px $ffM;
+    color: #fff;
+    display: block;
+  }
+}
+
+.text {
+  margin-bottom: 20px;
+  font: 400 13px/25px $ffM;
+  color: #fff;
+}
+
+.stick-wrap_blog-mods {
+  color: fade-out(#fff, .5);
+  word-spacing: 2px;
+  letter-spacing: 0;
+  top: 240px;
+  right: -30px;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: #d1232a;
+    position: absolute;
+    top: -15px;
+    left: -1px;
+  }
+}
+
+.bordered_blog-mods {
+  border-width: 80px 0 0 1305px;
+  border-color: transparent  transparent transparent #f2f2f2;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.blog-slider {
+  padding: 50px 0;
+  background-color: #f2f2f2;
+}
+
+.slider__item_blog-mods {
+  width: 12%;
+}
+
+.slider__item-content_blog-mods {
+  padding: 0;
+}
+
+.slider__item-content__wrap {
+  padding: 35px 35px;
+  background-color: #fff;
+}
+
+.slider__item-content__heading {
+  font: 800 23px/23px $ffM;
+  color: #000;
+  text-transform: capitalize;
+}
+
+.slider__item-content__text_blog-mods {
+  margin-top: 10px;
+  font: 400 13px/25px $ffM;
+  color: #697b83;
+}
+
+.author {
+  padding-left: 35px;
+  background-color: #fff;
+  border-top: 1px solid #f2f2f2;
+  @include clr;
+
+  &__name {
+    font: 400 12px/56px $ffM;
+    color: $red;
+
+    &-ic {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      margin-right: 10px;
+      background: url(../img/link-ic.png) no-repeat center center;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 28px;
+    background: $red url(../img/arrow.png) no-repeat center center;
+    float: right;
+  }
+}
