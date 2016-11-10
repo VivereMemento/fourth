@@ -1,0 +1,37 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  .title {
+    font-size: 25px;
+    line-height: 32px;
+  }
+
+  .title-wrap {
+    padding-left: 35px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .bordered {
+    border-width: 70px 0 0px 2560px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .frost-ice:after {
+    width: 0;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}

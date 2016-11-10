@@ -51,7 +51,7 @@
   position: relative;
 }
 
-.heading-big::first-letter {
+.heading-big :first-letter {
   margin-right: 200px;
 }
 

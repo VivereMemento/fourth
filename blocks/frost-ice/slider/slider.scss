@@ -3,8 +3,7 @@
   position: relative;
 
   &__list--wrap {
-    width: 100%;
-
+    width: 1170px;
     overflow: hidden;
   }
 
@@ -19,11 +18,15 @@
 
   &__item {
     width: 9.5%;
-    margin-right: 15px;
+    margin-right: 22px;
     float: left;
 
     &__pic-wrap {
       position: relative;
+    }
+
+    &-pic {
+      min-width: 100%;
     }
 
     &:hover .slider__item-pic__link {

@@ -52,7 +52,7 @@
   position: relative;
 }
 
-.heading-big::first-letter {
+.heading-big :first-letter {
   margin-right: 200px;
 }
 
@@ -255,6 +255,7 @@ body {
 }
 
 .row {
+  overflow: hidden;
   *zoom: 1;
 }
 
@@ -312,6 +313,14 @@ img {
 .logo__link:hover {
   color: #fff;
   text-decoration: none;
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .logo {
+    top: 0;
+    left: 0;
+  }
 }
 
 .nav {
@@ -424,19 +433,6 @@ img {
   height: 0;
 }
 
-.social__link-fb {
-  padding: 8px 6px 6px 10px;
-  background-color: #415da6;
-}
-
-.social__link-vk {
-  background-color: #6084a8;
-}
-
-.social__link-gl {
-  background-color: #db4d3f;
-}
-
 .fa {
   font-size: 22px;
   color: #fff;
@@ -529,7 +525,8 @@ img {
 }
 
 .header-pic {
-  min-width: 100%;
+  display: block;
+  margin: 0 auto;
   z-index: 1;
 }
 
@@ -778,6 +775,156 @@ img {
   color: #ebe26a;
 }
 
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .right {
+    right: 15px;
+  }
+  .stick-wrap_header-mods_r-b {
+    right: 0;
+  }
+  .header__top {
+    padding: 60px 35px 0 0;
+  }
+  .header__heading, .footer__heading {
+    padding: 60px 75px 0 150px;
+    *zoom: 1;
+  }
+  .header__heading:after, .footer__heading:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+  .heading {
+    font-size: 22px;
+    line-height: 37px;
+  }
+  .heading-big {
+    font-size: 210px;
+    line-height: 170px;
+  }
+  .heading-big::first-letter {
+    margin-right: 200px;
+  }
+  .heading-big:after {
+    width: 165px;
+    height: 9px;
+    bottom: -5px;
+    left: 85px;
+  }
+  .heading-big:before {
+    width: 30px;
+    height: 12px;
+    bottom: -17px;
+    left: 85px;
+  }
+  .heading-sub {
+    font-size: 11px;
+    line-height: 15px;
+  }
+  .heading-wrap {
+    width: 408px;
+  }
+  .date-wrap {
+    margin-bottom: 0;
+  }
+  .font-style {
+    font-size: 12px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .stick-wrap_header-mods_l {
+    top: 385px;
+  }
+  .right {
+    right: 5px;
+  }
+  .stick-wrap_header-mods_r-b {
+    right: -10;
+  }
+  .header__top {
+    padding: 30px 25px 0 0;
+  }
+  .nav {
+    display: none;
+  }
+  .header__heading, .footer__heading {
+    padding: 0 0 0 45px;
+  }
+  .heading {
+    font-size: 22px;
+    line-height: 37px;
+  }
+  .heading-big {
+    font-size: 200px;
+    line-height: 100px;
+  }
+  .heading-big::first-letter {
+    margin-right: 140px;
+  }
+  .heading-big:after {
+    width: 150px;
+    height: 9px;
+    bottom: -40px;
+    left: 80px;
+  }
+  .heading-big:before {
+    width: 30px;
+    height: 12px;
+    bottom: -50px;
+    left: 80px;
+  }
+  .heading-sub {
+    font-size: 11px;
+    line-height: 15px;
+  }
+  .heading-wrap {
+    margin-top: 100px;
+  }
+}
+
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .page {
+    padding: 0;
+  }
+  .header:before, .header:after {
+    display: none;
+  }
+  .stick-wrap {
+    display: none;
+  }
+  .heading {
+    font-size: 22px;
+    line-height: 37px;
+  }
+  .heading-sub {
+    font-size: 11px;
+    line-height: 15px;
+  }
+  .heading-big-wrap {
+    display: none;
+  }
+  .heading-wrap {
+    margin: 0;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .aside__search {
+    width: 40px;
+  }
+  .heading-wrap {
+    width: 320px;
+    padding: 10px;
+  }
+}
+
 .frost-ice {
   padding-top: 20px;
   background-color: #cc171e;
@@ -803,17 +950,45 @@ img {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 130px 0 70px 1305px;
+  border-width: 70px 0 130px 2560px;
   border-color: transparent transparent #11161d transparent;
 }
 
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .title {
+    font-size: 25px;
+    line-height: 32px;
+  }
+  .title-wrap {
+    padding-left: 35px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .bordered {
+    border-width: 70px 0 0px 2560px;
+  }
+}
+
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .frost-ice:after {
+    width: 0;
+  }
+}
+
+/* Custom, iPhone Retina */
 .slider {
   display: inline-block;
   position: relative;
 }
 
 .slider__list--wrap {
-  width: 100%;
+  width: 1170px;
   overflow: hidden;
 }
 
@@ -838,12 +1013,16 @@ img {
 
 .slider__item {
   width: 9.5%;
-  margin-right: 15px;
+  margin-right: 22px;
   float: left;
 }
 
 .slider__item__pic-wrap {
   position: relative;
+}
+
+.slider__item-pic {
+  min-width: 100%;
 }
 
 .slider__item:hover .slider__item-pic__link {
@@ -925,7 +1104,13 @@ img {
 }
 
 .blog-bg {
+  background-color: #f2f2f2;
   position: relative;
+}
+
+.blog-bg__pic {
+  display: block;
+  margin: 0 auto;
 }
 
 .blog-wrap {
@@ -1002,14 +1187,6 @@ img {
   left: -1px;
 }
 
-.bordered_blog-mods {
-  border-width: 80px 0 0 1305px;
-  border-color: transparent  transparent transparent #f2f2f2;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-
 .blog-slider {
   padding: 50px 0;
   background-color: #f2f2f2;
@@ -1073,6 +1250,53 @@ img {
   float: right;
 }
 
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .blog__content {
+    padding: 50px 40px 0 0px;
+  }
+  .blog__content-title {
+    padding-right: 75px;
+  }
+  .text {
+    font-size: 12px;
+    line-height: 17px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .blog__content-title {
+    padding: 0 10px;
+  }
+  .text {
+    font-size: 10px;
+  }
+}
+
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .blog__content {
+    padding: 20px;
+  }
+  .blog__content-title {
+    width: 100%;
+    padding: 0;
+  }
+  .blog__content-text {
+    display: none;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .slider__item_blog-mods {
+    width: 11%;
+  }
+}
+
 .footer {
   height: 1530px;
   margin-top: -1530px;
@@ -1103,12 +1327,17 @@ img {
   width: 100%;
   height: 1px;
   top: 239px;
-  left: 0;
+  right: 0;
   z-index: 9;
 }
 
 .footer-wrap {
   background-color: #11161d;
+}
+
+.footer-pic {
+  display: block;
+  margin: 0 auto;
 }
 
 .footer__heading {
@@ -1194,3 +1423,67 @@ img {
   top: 110px;
   left: -44px;
 }
+
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .footer {
+    height: 1100px;
+    margin-top: -1100px;
+  }
+  .footer-empty {
+    height: 1100px;
+  }
+  .footer:after {
+    height: 41%;
+  }
+  .footer:before {
+    width: 94%;
+    right: 0;
+  }
+  .footer__bottom-content {
+    width: 35%;
+    padding: 0;
+    margin-left: 25px;
+  }
+  .footer__bottom-mail {
+    width: 46%;
+    margin-left: 71px;
+  }
+  .social__list {
+    margin: 20px 0;
+    float: none;
+  }
+  .mail {
+    width: 100%;
+    float: none;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .footer__heading {
+    padding: 90px 75px 0 70px;
+  }
+  .heading-big-footer-mods:after {
+    left: 105px;
+    bottom: -35px;
+  }
+}
+
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .footer__heading {
+    padding: 100px 0px 0 0px;
+  }
+  .footer__bottom-content {
+    width: 85%;
+  }
+  .footer__bottom-mail {
+    width: 85%;
+    margin-left: 0;
+  }
+}
+
+/* Custom, iPhone Retina */

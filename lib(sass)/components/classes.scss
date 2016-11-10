@@ -9,7 +9,7 @@
     display: inline-block;
     position: relative;
 
-    &::first-letter {
+    & :first-letter {
       margin-right: 200px
     }
 

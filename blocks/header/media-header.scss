@@ -1,0 +1,178 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  .right {
+    right: 15px;
+  }
+
+  .stick-wrap_header-mods_r-b {
+    right: 0;
+  }
+  .header__top {
+    padding: 60px 35px 0 0;
+  }
+  .header__heading {
+    padding: 60px 75px 0 150px;
+    @include clr;
+  }
+
+  .heading {
+    font-size: 22px;
+    line-height: 37px;
+
+    &-big {
+      font-size: 210px;
+      line-height: 170px;
+
+      &::first-letter {
+        margin-right: 200px
+      }
+
+      &:after {
+        width: 165px;
+        height: 9px;
+        bottom: -5px;
+        left: 85px;
+      }
+
+      &:before {
+        width: 30px;
+        height: 12px;
+        bottom: -17px;
+        left: 85px;
+      }
+    }
+
+    &-sub {
+      font-size: 11px;
+      line-height: 15px;
+    }
+  }
+
+  .heading-wrap {
+    width: 408px;
+  }
+
+  .date-wrap {
+    margin-bottom: 0;
+  }
+
+  .font-style {
+    font-size: 12px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .stick-wrap_header-mods_l {
+    top: 385px;
+  }
+  .right {
+    right: 5px;
+  }
+
+  .stick-wrap_header-mods_r-b {
+    right: -10;
+  }
+
+  .header__top {
+    padding: 30px 25px 0 0;
+  }
+  .nav {
+    display: none;
+  }
+
+  .header__heading {
+    padding: 0 0 0 45px;
+  }
+  .heading {
+    font-size: 22px;
+    line-height: 37px;
+
+    &-big {
+      font-size: 200px;
+      line-height: 100px;
+
+      &::first-letter {
+        margin-right: 140px
+      }
+
+      &:after {
+        width: 150px;
+        height: 9px;
+        bottom: -40px;
+        left: 80px;
+      }
+
+      &:before {
+        width: 30px;
+        height: 12px;
+        bottom: -50px;
+        left: 80px;
+      }
+    }
+
+      &-sub {
+        font-size: 11px;
+        line-height: 15px;
+      }
+    }
+
+  .heading-wrap {
+    margin-top: 100px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .page {
+    padding: 0;
+  }
+
+  .header:before, .header:after {
+    display: none;
+  }
+
+  .stick-wrap {
+    display: none;
+  }
+
+  .header__top {
+
+  }
+
+  .heading {
+    font-size: 22px;
+    line-height: 37px;
+
+    &-sub {
+      font-size: 11px;
+      line-height: 15px;
+    }
+  }
+
+  .heading-big-wrap {
+    display: none;
+  }
+
+  .heading-wrap {
+    margin: 0;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+  .aside__search {
+    width: 40px;
+  }
+  .heading-wrap {
+    width: 320px;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,82 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  .footer {
+    height: 1100px;
+    margin-top: -1100px;
+
+    &-empty {
+      height: 1100px;
+    }
+
+    &:after {
+      height: 41%;
+    }
+
+    &:before {
+      width: 94%;
+      right: 0;
+    }
+  }
+
+  // footer__bottom ************************************ //
+
+  .footer__bottom-content {
+    width: 35%;
+    padding: 0;
+    margin-left: 25px;
+  }
+
+  .footer__bottom-mail {
+    width: 46%;
+    margin-left: 71px;
+  }
+
+  .social__list {
+    margin: 20px 0;
+    float: none;
+  }
+
+  .mail {
+    width: 100%;
+    float: none;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .footer__heading {
+    padding: 90px 75px 0 70px;
+  }
+
+  .heading-big-footer-mods:after {
+    left: 105px;
+    bottom: -35px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .footer__heading {
+    padding: 100px 0px 0 0px;
+  }
+  .footer__bottom-content {
+    width: 85%;
+  }
+
+  .footer__bottom-mail {
+    width: 85%;
+    margin-left: 0;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
